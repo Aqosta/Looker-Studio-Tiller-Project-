@@ -1,7 +1,7 @@
 dashboard_name: Tiller Report
 description: A dashboard template showing orders' data from one of the 21 Tiller restaurents.
 data_sources:
-  - BigQuery: "speedy-now-423709-s4.tiller.order_data_1restaurant"
+  - BigQuery: "speedy-now-423709-s4.tiller.order_data_1513restaurant"
 charts:
   - id: 1513 orders
     type: Combo_chart
