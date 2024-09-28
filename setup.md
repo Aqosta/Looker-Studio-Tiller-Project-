@@ -11,6 +11,7 @@
   -dimension: 'date_closed'
   -metric: 'm_cached_payed', 'm_cached_price', 'm_nb_customer'
   -filter: 'monthly'
+- Aggregate certain metrics
 
 ## 3. Adding Calculated Fields
 - 
