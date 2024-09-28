@@ -8,13 +8,19 @@
 ## 2. Creating Charts
 - Add scorecards for 'id_waiter', 'id_table', 'dim_source', 'm_nb_customer', 'id_order'
 - Add a combo chart with:
-  -dimension: 'date_closed'
-  -metric: 'm_cached_payed', 'm_cached_price', 'm_nb_customer'
-  -filter: 'monthly'
-- Aggregate certain metrics
+  - dimensions: 'date_closed', 'date_opened'
+  - metrics: 'm_cached_payed', 'm_cached_price', 'm_nb_customer'
+  - filter: monthly
+  - aggregations: SUM
+- Add stacked bar chart
+  - dimension: 'dim_status'
+  - breakdown_dimension: 'dim_source'
+  - metrics: 'id_order'
+  - aggregations: COUNT
 - Add pie chart
-  -
-- Add pie chart 
+  - dimension: 'dim_source'
+  - metrics: 'id_order'
+  - aggregations: COUNT_DISTINCT
 
 
 ## 3. Adding Calculated Fields
