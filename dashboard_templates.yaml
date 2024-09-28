@@ -3,18 +3,29 @@ description: A dashboard template showing orders' data from one of the 21 Tiller
 data_sources:
   - BigQuery: "speedy-now-423709-s4.tiller.order_data_1513restaurant"
 charts:
-  - id: 1513 orders
+  - id: 1513 Bar Charts
     type: Combo_chart 
     dimensions: date_closed, date_opened
     metrics: m_cached_payed, m_cached_price, m_nb_customer
     filter: monthly
     aggregations: SUM
 
-  - id: 1513 orders
+  - id: 1513 Bar Charts
     type: scorecards
     dimension: id_orders
     metrics: id_waiter, id_table, dim_source, m_nb_customer, id_order
     aggregations: SUM, COUNT_DISTINCT, COUNT
+  - id: 1513 Pie Charts
+    type: pie_chart
+    dimension: dim_source
+    metrics: id_order
+    aggregations: COUNT_DISTINCT
+  - id: 1513 Pie Charts
+    type: stacked_bar_chart
+    dimension: dim_status
+    breakdown_dimension: dim_source
+    metrics: id_order
+    aggregations: COUNT
 
 
 

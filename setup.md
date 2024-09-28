@@ -12,6 +12,10 @@
   -metric: 'm_cached_payed', 'm_cached_price', 'm_nb_customer'
   -filter: 'monthly'
 - Aggregate certain metrics
+- Add pie chart
+  -
+- Add pie chart 
+
 
 ## 3. Adding Calculated Fields
-- 
+- Calculate total turnover
