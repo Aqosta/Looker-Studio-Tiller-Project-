@@ -6,6 +6,7 @@
 - Ensure access to the relevant tables is granted.
 
 ## 2. Creating Charts
+- Add scorecards for 'id_waiter', 'id_table', 'dim_source', 'm_nb_customer', 'id_order'
 - Add a combo chart with:
   -dimension: 'date_closed'
   -metric: 'm_cached_payed', 'm_cached_price', 'm_nb_customer'
