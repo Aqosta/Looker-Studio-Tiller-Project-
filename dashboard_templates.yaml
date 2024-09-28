@@ -1,1 +1,12 @@
+dashboard_name: Tiller Report
+description: A dashboard template showing orders' data from one of the 21 Tiller restaurents.
+data_sources:
+  - BigQuery: "speedy-now-423709-s4.tiller.order_data_1restaurant"
+charts:
+  - id: 1513 orders
+    type: Combo_chart
+    dimension: date_closed
+    metric: m_cached_payed, m_cached_price, m_nb_customer
+    filter: monthly
+
 
