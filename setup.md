@@ -25,3 +25,5 @@
 
 ## 3. Adding Calculated Fields
 - Calculate total turnover
+- add turnover as a scorecard
+- Remove dim_source as scorecard 
